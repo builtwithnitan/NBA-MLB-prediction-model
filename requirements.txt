@@ -1,0 +1,15 @@
+# MLB HR Prediction Pipeline
+# Install: pip install -r requirements.txt
+
+requests>=2.31.0      # API calls (MLB Stats API, Open-Meteo)
+pandas>=2.1.0         # DataFrame handling in features.py
+scipy>=1.11.0         # Statistical tests: binomtest, Wilson CI (V3)
+
+# ── Optional upgrades ─────────────────────────────────────────────────────────
+# pybaseball>=2.2.7   # Real Statcast data (barrel%, EV, FB%)
+#                     # pip install pybaseball
+#                     # Then see the upgrade block in src/stats.py
+
+# schedule>=1.2.0     # Pure Python scheduler (alternative to cron)
+#                     # pip install schedule
+#                     # See scheduler.py for usage
